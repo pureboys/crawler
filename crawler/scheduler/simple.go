@@ -28,6 +28,3 @@ func (s *SimpleScheduler) Submit(r engine.Request) {
 		s.workerChan <- r
 	}()
 }
-
-
-

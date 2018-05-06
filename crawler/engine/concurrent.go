@@ -3,7 +3,7 @@ package engine
 type ConcurrentEngine struct {
 	Scheduler   Scheduler
 	WorkerCount int
-	ItemChan chan interface{}
+	ItemChan    chan interface{}
 }
 
 type Scheduler interface {
@@ -30,7 +30,6 @@ func (e *ConcurrentEngine) Run(seeds ...Request) {
 		e.Scheduler.Submit(r)
 	}
 
-
 	for {
 		result := <-out
 		for _, item := range result.Items {
@@ -48,7 +47,13 @@ func (e *ConcurrentEngine) Run(seeds ...Request) {
 	}
 }
 
-func isDuplicate(s string) bool {
+var visitedUrls = make(map[string]bool)
+
+func isDuplicate(url string) bool {
+	if visitedUrls[url] {
+		return true
+	}
+	visitedUrls[url] = true
 	return false
 }
 

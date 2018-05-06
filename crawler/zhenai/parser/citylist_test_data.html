@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="zh">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
 
     <!-- 手机端seo适配  -->
     <meta name="mobile-agent" content="format=xhtml; url=http://m.zhenai.com/zhenghun">
     <meta name="mobile-agent" content="format=html5; url=http://m.zhenai.com/zhenghun">
     <meta name="mobile-agent" content="format=wml; url=http://m.zhenai.com/zhenghun">
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <script src="http://i3.zastatic.com/zhenai3/zhenai2015/js/lib/jquery-1.8.3.min_e128811.js"></script>
     <script type="text/javascript" src="http://images.zastatic.com/imwap/wap2015/js/mseo.js"></script>
     <script type="text/javascript">
@@ -22,32 +22,82 @@
             var type = '1';
             seoStat(type);
             var ref = document.referrer;
-            document.cookie="SEOReferrer="+ref+";domain=.zhenai.com";
+            document.cookie = "SEOReferrer=" + ref + ";domain=.zhenai.com";
             location.href = "http://m.zhenai.com/zhenghun";
         }
     </script>
     <title>珍爱征婚网_征婚交友信息_同城征婚网站</title>
     <meta name="renderer" content="webkit">
-    <link href="http://i2.zastatic.com/zhenai3/zhenai2015/img/favicon.ico" type="image/x-icon" rel="icon" />
-    <link href="http://i2.zastatic.com/zhenai3/zhenai2015/img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
-    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/public_7e4b418.css" />
-    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/aside_16fbf81.css" />
-    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/frame/common_22824a8.css" />
-    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/dating_3563999.css" />
-    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/datingPop_28a2bb1.css" />
+    <link href="http://i2.zastatic.com/zhenai3/zhenai2015/img/favicon.ico" type="image/x-icon" rel="icon"/>
+    <link href="http://i2.zastatic.com/zhenai3/zhenai2015/img/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/public_7e4b418.css"/>
+    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/aside_16fbf81.css"/>
+    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/frame/common_22824a8.css"/>
+    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/dating_3563999.css"/>
+    <link rel="stylesheet" href="http://i0.zastatic.com/zhenai3/zhenai2015/css/datingPop_28a2bb1.css"/>
     <meta name="keywords" content="征婚,征婚交友,同城征婚,珍爱征婚"/>
     <meta name="description" content="珍爱征婚网提供最新最全的征婚信息，同城征婚快速查找在线聊天，所有征婚信息都经过严格审核，精准适配自己的有缘人，找对象快捷安全！"/>
     <style>
-        .city-page{margin: 20px auto;border: 1px solid #e0e0e0;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
-        .city-page .city-list{padding: 40px;background: #fff;}
-        .city-page .city-list dt{float: left; width: 40px; font-family: Arial,Helvetica,sans-serif; font-size: 16px; clear: both; font-weight: bold; margin: 0px; padding: 0px; color: #666; }
-        .city-page .city-list dd{float: left; width: 1070px; margin-left: 0px; padding: 0px; margin-bottom: 10px; text-align: left; }
-        .city-page .city-list dd a{font-size: 13px; margin-right: 14px; white-space: nowrap; }
-        .city-page .city-list dd a.tred {color: #f60; }
-        .root1000 .frameW {width: 990px;}
-        .root1000 .city-page .city-list dd{width: 870px;}
+        .city-page {
+            margin: 20px auto;
+            border: 1px solid #e0e0e0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .city-page .city-list {
+            padding: 40px;
+            background: #fff;
+        }
+
+        .city-page .city-list dt {
+            float: left;
+            width: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            clear: both;
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+            color: #666;
+        }
+
+        .city-page .city-list dd {
+            float: left;
+            width: 1070px;
+            margin-left: 0px;
+            padding: 0px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .city-page .city-list dd a {
+            font-size: 13px;
+            margin-right: 14px;
+            white-space: nowrap;
+        }
+
+        .city-page .city-list dd a.tred {
+            color: #f60;
+        }
+
+        .root1000 .frameW {
+            width: 990px;
+        }
+
+        .root1000 .city-page .city-list dd {
+            width: 870px;
+        }
     </style>
-    <!--[if lt IE 9]> <script type="text/javascript"> (function (){ var tag = ["address","article","aside","audio","canvas","details","figcaption","figure","header","footer","hgroup","menu","nav","section","summary","time","video"],i=0; for(i in tag){ document.createElement(tag[i]); } })();</script><![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript"> (function () {
+        var tag = ["address", "article", "aside", "audio", "canvas", "details", "figcaption", "figure", "header", "footer", "hgroup", "menu", "nav", "section", "summary", "time", "video"],
+                i = 0;
+        for (i in tag) {
+            document.createElement(tag[i]);
+        }
+    })();</script><![endif]-->
     <script src="http://i3.zastatic.com/zhenai3/zhenai2015/js/lib/jquery-1.8.3.min_e128811.js"></script>
     <script src="http://i3.zastatic.com/zhenai3/zhenai2015/js/lib/LAB.min_85a55fb.js"></script>
     <script src="http://i3.zastatic.com/zhenai3/zhenai2015/js/lib/sea_6642d21.js"></script>
@@ -55,7 +105,7 @@
 
         /* Baidu Statistics Begin*/
         var _hmt = _hmt || [];
-        (function() {
+        (function () {
             var hm = document.createElement("script");
             hm.src = "//hm.baidu.com/hm.js?2c8ad67df9e787ad29dbd54ee608f5d2";
             var s = document.getElementsByTagName("script")[0];
@@ -64,45 +114,47 @@
         /* Baidu Statistics End*/
 
         seajs.config({
-            charset:"GBK",
+            charset: "GBK",
             base: "http://images.zastatic.com/zhenai3",
             alias: {
-                dialog : "zhenai2015/js/lib/artDialog.v6/src/dialog.js",
-                zhenaiPay : "http://images.zastatic.com/zhenai3/zhenai2012/js/paycenter/zhenaiPay.js?v=20150420",
-                msgService : "zhenai2015/js/message/msgService.js?v=20150723",
-                pubDialog : "zhenai2015/js/public/pubDialog.js",
-                header : "zhenai2015/js/public/header.js",
-                toolBar : "zhenai2015/js/public/toolBar.js",
-                right : "zhenai2015/js/message/right.js",
-                changeDocWidth : "zhenai2015/js/public/changeDocWidth.js",
-                loginService : "zhenai2015/js/public/login.js",
-                tipBar : "zhenai2015/js/public/tipBar.js"
+                dialog: "zhenai2015/js/lib/artDialog.v6/src/dialog.js",
+                zhenaiPay: "http://images.zastatic.com/zhenai3/zhenai2012/js/paycenter/zhenaiPay.js?v=20150420",
+                msgService: "zhenai2015/js/message/msgService.js?v=20150723",
+                pubDialog: "zhenai2015/js/public/pubDialog.js",
+                header: "zhenai2015/js/public/header.js",
+                toolBar: "zhenai2015/js/public/toolBar.js",
+                right: "zhenai2015/js/message/right.js",
+                changeDocWidth: "zhenai2015/js/public/changeDocWidth.js",
+                loginService: "zhenai2015/js/public/login.js",
+                tipBar: "zhenai2015/js/public/tipBar.js"
             }
         });
         document.domain = "zhenai.com";
-        function ajaxStat(resourceId,accessPoint,sParam,isPV) {
-            var ref=document.referrer;
-            var url='http://cdnlog.zhenai.com/visit/?resourceId='+resourceId+'&accessPoint='+accessPoint+'&sParam='+sParam+'&isPV='+isPV+'&referer='+encodeURIComponent(ref?ref:'');
+
+        function ajaxStat(resourceId, accessPoint, sParam, isPV) {
+            var ref = document.referrer;
+            var url = 'http://cdnlog.zhenai.com/visit/?resourceId=' + resourceId + '&accessPoint=' + accessPoint + '&sParam=' + sParam + '&isPV=' + isPV + '&referer=' + encodeURIComponent(ref ? ref : '');
             $.ajax({
-                url:url,
-                dataType:"jsonp",
-                success: function(data){}
+                url: url,
+                dataType: "jsonp",
+                success: function (data) {
+                }
             });
         }
 
         /* SEO Statistics Begin*/
-        function seoStat(entry){
-            seajs.use("zhenai2015/js/seo/seo.js", function(seo){
+        function seoStat(entry) {
+            seajs.use("zhenai2015/js/seo/seo.js", function (seo) {
                 seo.init(entry);
             });
         }
+
         /** SEO Statistics End */
     </script>
 
 </head>
 <body>
 <script src="http://i3.zastatic.com/zhenai3/zhenai2015/js/public/screenfix_608df31.js"></script>
-
 
 
 <header id="jcZAHeader" class="header">
@@ -114,7 +166,7 @@
                 <li class="mobile"><a href="http://mo.zhenai.com" target="_blank" title="珍爱网app下载">手机版</a></li>
                 <li class="collect"><a href="javascript:;">收藏本站</a></li>
                 <li class="cust"><a href="javascript:;">在线客服</a></li>
-                <li><a href="http://www.zhenai.com/anquan/" target="_blank" >安全中心</a></li>
+                <li><a href="http://www.zhenai.com/anquan/" target="_blank">安全中心</a></li>
 
                 <li class="tel">红娘热线：4001-520520</li>
             </ul>
@@ -126,13 +178,16 @@
                 <ul>
                     <li id="jcMenuBeauty" class="bg-scroll"></li>
                     <li><a href="http://profile.zhenai.com/v2/personal/home.do" rel="nofollow">我的珍爱</a></li>
-                    <li><a href="http://search.zhenai.com/search/getfastmdata.jsps" target="_blank" rel="nofollow">搜索</a></li>
-                    <li><a href="http://t.zhenai.com" target="_blank" >
+                    <li><a href="http://search.zhenai.com/search/getfastmdata.jsps" target="_blank"
+                           rel="nofollow">搜索</a></li>
+                    <li><a href="http://t.zhenai.com" target="_blank">
                         直营门店
                     </a></li>
-                    <li><a href="http://profile.zhenai.com/zhenaiMail/zhenaiMail.jsps" target="_blank" rel="nofollow">珍心会员</a></li>
-                    <li><a href="http://t.zhenai.com/hnzone/articleIndex.do" target="_blank" rel="nofollow">情感频道</a><i class="new"></i></li>
-                    <li><a href="http://story.zhenai.com/" target="_blank" >成功故事</a></li>
+                    <li><a href="http://profile.zhenai.com/zhenaiMail/zhenaiMail.jsps" target="_blank" rel="nofollow">珍心会员</a>
+                    </li>
+                    <li><a href="http://t.zhenai.com/hnzone/articleIndex.do" target="_blank" rel="nofollow">情感频道</a><i
+                            class="new"></i></li>
+                    <li><a href="http://story.zhenai.com/" target="_blank">成功故事</a></li>
 
 
                 </ul>
@@ -140,7 +195,8 @@
             <div class="header-info user-info">
                 <span class="topic"><em class="user-icon"></em></span>
                 <ul>
-                    <li><a href="http://profile.zhenai.com/personal/material.jsps?notComplete=1" rel="nofollow">编辑资料</a></li>
+                    <li><a href="http://profile.zhenai.com/personal/material.jsps?notComplete=1" rel="nofollow">编辑资料</a>
+                    </li>
                     <li><a href="http://profile.zhenai.com/credit/creditIndex.jsps" rel="nofollow">诚信认证</a></li>
                     <li><a href="http://register.zhenai.com/personal/getmemberphotos.jsps" rel="nofollow">个人相册</a></li>
                     <li><a href="http://profile.zhenai.com/personal/returnStep.jsps" rel="nofollow">系统设置</a></li>
@@ -154,7 +210,8 @@
                     <li><a href="http://profile.zhenai.com/v2/msg/msgIndex.do" rel="nofollow">消息</a></li>
                     <li><a href="http://profile.zhenai.com/v2/visit/index.do" rel="nofollow">谁看过我</a></li>
                     <li><a href="http://profile.zhenai.com/v2/notice/index.do" rel="nofollow">系统通知</a></li>
-                    <li><a href="http://profile.zhenai.com/v2/intercourse/intercourseIndex.do" rel="nofollow">交往对象</a></li>
+                    <li><a href="http://profile.zhenai.com/v2/intercourse/intercourseIndex.do" rel="nofollow">交往对象</a>
+                    </li>
 
                 </ul>
             </div>
@@ -162,20 +219,22 @@
     </section>
 </header>
 <script type="text/javascript">
-    $(function(){
-        var index = 0,url = location.href,host=window.location.host;
-        if(url.indexOf("/search/getfastmdata.jsps")!=-1){
+    $(function () {
+        var index = 0, url = location.href, host = window.location.host;
+        if (url.indexOf("/search/getfastmdata.jsps") != -1) {
             index = 2;
-        }else if(url.indexOf("/lovestory/indexhnznone.jsps")!=-1){
+        } else if (url.indexOf("/lovestory/indexhnznone.jsps") != -1) {
             index = 3;
-        }else if(url.indexOf("/zhenaiMail/zhenaiMail.jsps")!=-1){
+        } else if (url.indexOf("/zhenaiMail/zhenaiMail.jsps") != -1) {
             index = 4;
-        }else if(host.indexOf('story.zhenai.com')!=-1){
+        } else if (host.indexOf('story.zhenai.com') != -1) {
             index = 5;
-        }else if(url.indexOf("/hnzone/articleIndex.do")!=-1){
-            index=6;
+        } else if (url.indexOf("/hnzone/articleIndex.do") != -1) {
+            index = 6;
         }
-        seajs.use("zhenai2015/js/public/header.js",function(header){header.init(index);});
+        seajs.use("zhenai2015/js/public/header.js", function (header) {
+            header.init(index);
+        });
     });
 </script>
 <article class="myhome-wrap frameW city-page">
@@ -1752,8 +1811,81 @@
 <div class="hot-city seo-city">
     <div class="city-wrap frameW">
         <div class="city-list clearfix limit-44">
-            热门征婚：<a target="_blank" href="http://www.zhenai.com/zhenghun/beijing">北京征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/xian">西安征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/handan">邯郸征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/xuzhou">徐州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/shanghai">上海征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/zhengzhou">郑州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/jinan">济南征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/nanjing">南京征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/qingdao">青岛征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/shenzhen">深圳征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/guangzhou">广州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/yantai">烟台征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/xiamen">厦门征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/huaian">淮安征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/shijiazhuang">石家庄征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/chengdu">成都征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/shenyang">沈阳征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/haerbin">哈尔滨征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/enshi">恩施征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/changsha">长沙征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/hefei">合肥征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/dongying">东营征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/wuxi">无锡征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/zhoukou">周口征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/nanning">南宁征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/changchun">长春征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/luoyang">洛阳征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/foshan">佛山征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/maoming">茂名征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/ganzhou">赣州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/dalian">大连征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/suzhou">苏州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/ningbo">宁波征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/wenzhou">温州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/dongguan">东莞征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/kunming">昆明征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/chongqing">重庆征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/wuhan">武汉征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/tianjin">天津征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/hangzhou">杭州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/fuzhou">福州征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/nanchang">南昌征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/taiyuan">太原征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/haikou">海口征婚</a><a target="_blank" href="http://www.zhenai.com/zhenghun/quanzhou1">泉州征婚</a>
-            <br/>热门交友：<a target="_blank" href="http://www.zhenai.com/jiaoyou/beijing">北京交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/shanghai">上海交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/shenzhen">深圳交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/xian">西安交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/handan">邯郸交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/nanjing">南京交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/shenyang">沈阳交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/wuhan">武汉交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/yantai">烟台交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/qingdao">青岛交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/shijiazhuang">石家庄交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/ningbo">宁波交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/chengdu">成都交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/guangzhou">广州交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/xiamen">厦门交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/jinan">济南交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/zhengzhou">郑州交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/hangzhou">杭州交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/suzhou">苏州交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/weifang">潍坊交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/weihai">威海交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/nanchang">南昌交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/hefei">合肥交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/ganzhou">赣州交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/changsha">长沙交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/wuxi">无锡交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/fuzhou">福州交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/dalian">大连交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/yangzhou">扬州交友</a><a target="_blank" href="http://www.zhenai.com/jiaoyou/xuzhou">徐州交友</a>
+            热门征婚：<a target="_blank" href="http://www.zhenai.com/zhenghun/beijing">北京征婚</a><a target="_blank"
+                                                                                             href="http://www.zhenai.com/zhenghun/xian">西安征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/handan">邯郸征婚</a><a target="_blank"
+                                                                                        href="http://www.zhenai.com/zhenghun/xuzhou">徐州征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/shanghai">上海征婚</a><a target="_blank"
+                                                                                          href="http://www.zhenai.com/zhenghun/zhengzhou">郑州征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/jinan">济南征婚</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/zhenghun/nanjing">南京征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/qingdao">青岛征婚</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/zhenghun/shenzhen">深圳征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/guangzhou">广州征婚</a><a target="_blank"
+                                                                                           href="http://www.zhenai.com/zhenghun/yantai">烟台征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/xiamen">厦门征婚</a><a target="_blank"
+                                                                                        href="http://www.zhenai.com/zhenghun/huaian">淮安征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/shijiazhuang">石家庄征婚</a><a target="_blank"
+                                                                                               href="http://www.zhenai.com/zhenghun/chengdu">成都征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/shenyang">沈阳征婚</a><a target="_blank"
+                                                                                          href="http://www.zhenai.com/zhenghun/haerbin">哈尔滨征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/enshi">恩施征婚</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/zhenghun/changsha">长沙征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/hefei">合肥征婚</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/zhenghun/dongying">东营征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/wuxi">无锡征婚</a><a target="_blank"
+                                                                                      href="http://www.zhenai.com/zhenghun/zhoukou">周口征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/nanning">南宁征婚</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/zhenghun/changchun">长春征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/luoyang">洛阳征婚</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/zhenghun/foshan">佛山征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/maoming">茂名征婚</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/zhenghun/ganzhou">赣州征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/dalian">大连征婚</a><a target="_blank"
+                                                                                        href="http://www.zhenai.com/zhenghun/suzhou">苏州征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/ningbo">宁波征婚</a><a target="_blank"
+                                                                                        href="http://www.zhenai.com/zhenghun/wenzhou">温州征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/dongguan">东莞征婚</a><a target="_blank"
+                                                                                          href="http://www.zhenai.com/zhenghun/kunming">昆明征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/chongqing">重庆征婚</a><a target="_blank"
+                                                                                           href="http://www.zhenai.com/zhenghun/wuhan">武汉征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/tianjin">天津征婚</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/zhenghun/hangzhou">杭州征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/fuzhou">福州征婚</a><a target="_blank"
+                                                                                        href="http://www.zhenai.com/zhenghun/nanchang">南昌征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/taiyuan">太原征婚</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/zhenghun/haikou">海口征婚</a><a
+                target="_blank" href="http://www.zhenai.com/zhenghun/quanzhou1">泉州征婚</a>
+            <br/>热门交友：<a target="_blank" href="http://www.zhenai.com/jiaoyou/beijing">北京交友</a><a target="_blank"
+                                                                                                 href="http://www.zhenai.com/jiaoyou/shanghai">上海交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/shenzhen">深圳交友</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/jiaoyou/xian">西安交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/handan">邯郸交友</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/jiaoyou/nanjing">南京交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/shenyang">沈阳交友</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/jiaoyou/wuhan">武汉交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/yantai">烟台交友</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/jiaoyou/qingdao">青岛交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/shijiazhuang">石家庄交友</a><a target="_blank"
+                                                                                              href="http://www.zhenai.com/jiaoyou/ningbo">宁波交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/chengdu">成都交友</a><a target="_blank"
+                                                                                        href="http://www.zhenai.com/jiaoyou/guangzhou">广州交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/xiamen">厦门交友</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/jiaoyou/jinan">济南交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/zhengzhou">郑州交友</a><a target="_blank"
+                                                                                          href="http://www.zhenai.com/jiaoyou/hangzhou">杭州交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/suzhou">苏州交友</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/jiaoyou/weifang">潍坊交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/weihai">威海交友</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/jiaoyou/nanchang">南昌交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/hefei">合肥交友</a><a target="_blank"
+                                                                                      href="http://www.zhenai.com/jiaoyou/ganzhou">赣州交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/changsha">长沙交友</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/jiaoyou/wuxi">无锡交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/fuzhou">福州交友</a><a target="_blank"
+                                                                                       href="http://www.zhenai.com/jiaoyou/dalian">大连交友</a><a
+                target="_blank" href="http://www.zhenai.com/jiaoyou/yangzhou">扬州交友</a><a target="_blank"
+                                                                                         href="http://www.zhenai.com/jiaoyou/xuzhou">徐州交友</a>
         </div>
 
         <div class="city-list clearfix">
@@ -1777,32 +1909,57 @@
 <footer class="footer">
     <div class="frameW clearfix">
         <div class="about">
-            <div class="quick"><a target="_blank" href="http://about.zhenai.com/" >关于我们</a>|<a target="_blank" href="http://contact.zhenai.com/" >联系我们</a>|<a target="_blank" href="http://zhenai.zhiye.com/" >加入我们</a>|<a target="_blank" href="http://about.zhenai.com/huoban" rel="nofollow">合作伙伴</a>|<a target="_blank" href="http://profile.zhenai.com/personal/getguestbookbegin.jsps" rel="nofollow">意见反馈</a>|<a href="http://www.zhenai.com/sitemap.html" target="_blank">网站地图</a>
-                |<a href="http://www.zhenai.com/ahelpcenter/index.jsp" target="_blank">帮助中心</a>|<a href="http://album.zhenai.com" target="_blank">珍爱会员</a>|<a href="http://city.zhenai.com/" target="_blank">珍爱相亲</a>|<a href="http://register.zhenai.com/register/serverrulenew.jsp" target="_blank">珍爱网服务协议</a>|<a href="http://register.zhenai.com/register/intimacy.jsp" target="_blank">个人信息保护政策</a></div>
-            <div class="brand grayL"><span>品牌：12年专业婚恋服务</span>&nbsp;&nbsp;<span>专业：庞大的资深红娘队伍</span>&nbsp;&nbsp;<span>真实：诚信会员验证体系</span></div>
-            <div class="contact grayL"><span>客服热线：4001-520-520（周一至周日：9:00-21:00）</span><span>客服信箱：kefu@zhenai.com</span></div>
-            <div class="contact grayL"><span><a href="http://profile.zhenai.com/v2/sys/reportEntry.do" target="_blank" rel="nofollow">违法和不良信息举报</a></span>&nbsp;&nbsp;<span>违法和不良信息举报专线：4008829288</span>&nbsp;&nbsp;<span>举报信箱：<a href="mailto:jubao@zhenai.com" class="underlines" rel="nofollow">jubao@zhenai.com</a></span></div>
+            <div class="quick"><a target="_blank" href="http://about.zhenai.com/">关于我们</a>|<a target="_blank"
+                                                                                              href="http://contact.zhenai.com/">联系我们</a>|<a
+                    target="_blank" href="http://zhenai.zhiye.com/">加入我们</a>|<a target="_blank"
+                                                                                href="http://about.zhenai.com/huoban"
+                                                                                rel="nofollow">合作伙伴</a>|<a
+                    target="_blank" href="http://profile.zhenai.com/personal/getguestbookbegin.jsps"
+                    rel="nofollow">意见反馈</a>|<a href="http://www.zhenai.com/sitemap.html" target="_blank">网站地图</a>
+                |<a href="http://www.zhenai.com/ahelpcenter/index.jsp" target="_blank">帮助中心</a>|<a
+                        href="http://album.zhenai.com" target="_blank">珍爱会员</a>|<a href="http://city.zhenai.com/"
+                                                                                   target="_blank">珍爱相亲</a>|<a
+                        href="http://register.zhenai.com/register/serverrulenew.jsp" target="_blank">珍爱网服务协议</a>|<a
+                        href="http://register.zhenai.com/register/intimacy.jsp" target="_blank">个人信息保护政策</a></div>
+            <div class="brand grayL"><span>品牌：12年专业婚恋服务</span>&nbsp;&nbsp;<span>专业：庞大的资深红娘队伍</span>&nbsp;&nbsp;<span>真实：诚信会员验证体系</span>
+            </div>
+            <div class="contact grayL"><span>客服热线：4001-520-520（周一至周日：9:00-21:00）</span><span>客服信箱：kefu@zhenai.com</span>
+            </div>
+            <div class="contact grayL"><span><a href="http://profile.zhenai.com/v2/sys/reportEntry.do" target="_blank"
+                                                rel="nofollow">违法和不良信息举报</a></span>&nbsp;&nbsp;<span>违法和不良信息举报专线：4008829288</span>&nbsp;&nbsp;<span>举报信箱：<a
+                    href="mailto:jubao@zhenai.com" class="underlines" rel="nofollow">jubao@zhenai.com</a></span></div>
         </div>
         <div class="copyright grayL">
             <p>Copyright &copy; 2005-2018 版权所有：深圳市珍爱网信息技术有限公司</p>
-            <p>增值电信业务经营许可证：粤B2-20040382   <a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备09157619号-1</a> 乙测资字4410775 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502000534" class="gongwang"><img src="http://images.zastatic.com/zhenai3/zhenai2015/img/myhome/gongan.png" alt=""></a>  粤公网安备 44030502000534号</p>
+            <p>增值电信业务经营许可证：粤B2-20040382 <a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备09157619号-1</a>
+                乙测资字4410775 <a target="_blank"
+                               href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502000534"
+                               class="gongwang"><img
+                        src="http://images.zastatic.com/zhenai3/zhenai2015/img/myhome/gongan.png" alt=""></a> 粤公网安备
+                44030502000534号</p>
             <div class="out-link" id="foot_link">
-                <a title="网文证" href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/7C7C3F8EFF5648A2950931B65DF13B87" class="link10" target="_blank" rel="nofollow">
+                <a title="网文证"
+                   href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/7C7C3F8EFF5648A2950931B65DF13B87"
+                   class="link10" target="_blank" rel="nofollow">
                     <img src="http://i2.zastatic.com/zhenai3/zhenai2015/img/myhome/wen_bc81e4f.png" alt="">
                 </a>
-                <a target="_blank" title="深圳网监备案" href="http://szcert.ebs.org.cn/6398bd09-b195-4fd9-a010-e1fea403a766" class="link5" rel="nofollow"></a>
-                <a title="深圳举报中心" href="http://szwljb.gov.cn/" class="link6" target="_blank"  rel="nofollow"></a>
-                <a title="违法和不良信息举报中心" href="http://www.12377.cn/" class="link3" target="_blank"  rel="nofollow"></a>
-                <a title="诚信示范网站" href="https://search.szfw.org/cert/l/CX20150630010588010670" class="link4" target="_blank" rel="nofollow"></a>
-                <a title="AAA级信用企业" href="http://www.itrust.org.cn/Home/Index/itrust_certifi?wm=1761973720" class="link7" target="_blank" rel="nofollow"></a>
+                <a target="_blank" title="深圳网监备案" href="http://szcert.ebs.org.cn/6398bd09-b195-4fd9-a010-e1fea403a766"
+                   class="link5" rel="nofollow"></a>
+                <a title="深圳举报中心" href="http://szwljb.gov.cn/" class="link6" target="_blank" rel="nofollow"></a>
+                <a title="违法和不良信息举报中心" href="http://www.12377.cn/" class="link3" target="_blank" rel="nofollow"></a>
+                <a title="诚信示范网站" href="https://search.szfw.org/cert/l/CX20150630010588010670" class="link4"
+                   target="_blank" rel="nofollow"></a>
+                <a title="AAA级信用企业" href="http://www.itrust.org.cn/Home/Index/itrust_certifi?wm=1761973720"
+                   class="link7" target="_blank" rel="nofollow"></a>
             </div>
         </div>
     </div>
-</footer>>
+</footer>
+>
 </body>
 <script type="text/javascript">
     var type = '1';
-    (function(){
+    (function () {
         seoStat(type);
     })();
 </script>
