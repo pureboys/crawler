@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>golang 学习</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .margin {
+            margin-top: 40px;
+        }
+
+        .margin2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row margin">
+        <input type="text" class="form-control" placeholder="Text input">
+        <p class="text-center margin2">
+            为你找到 {{.Hits}} 个相关结果， 显示从 {{.Start}} 起共 {{len .Items}} 个
+        </p>
+    </div>
+    <div class="row margin">
+        <table class="table table-bordered table-hover">
+        {{range .Items}}
+            <tr>
+                <td><a href="{{.Url}}">{{.Payload.Name}}</a></td>
+            {{with .Payload}}
+                <td>{{.Gender}}</td>
+                <td>{{.Age}}</td>
+                <td>{{.Height}}cm</td>
+                <td>{{.Weight}}kg</td>
+                <td>{{.Income}}</td>
+                <td>{{.Education}}</td>
+                <td>{{.Occupation}}</td>
+                <td>{{.Hokou}}</td>
+                <td>{{.Xinzuo}}</td>
+                <td>{{.House}}</td>
+                <td>{{.Car}}</td>
+            {{end}}
+            </tr>
+        {{else}}
+            <tr>
+                <td colspan="12">没有找到相关用户</td>
+            </tr>
+        {{end}}
+        </table>
+    </div>
+</div>
+</body>
+</html>
