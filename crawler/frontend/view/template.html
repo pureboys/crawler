@@ -22,10 +22,21 @@
 
 <div class="container">
     <div class="row margin">
-        <input type="text" class="form-control" placeholder="Text input">
-        <p class="text-center margin2">
-            为你找到 {{.Hits}} 个相关结果， 显示从 {{.Start}} 起共 {{len .Items}} 个
-        </p>
+
+        <form method="get">
+            <div class="col-xs-11">
+                <input type="text" class="form-control col-sm-12" placeholder="Search input" value="{{.Query}}" name="q">
+            </div>
+            <div class="col-xs-1">
+                <button class="btn btn-danger" type="submit">Search</button>
+            </div>
+        </form>
+
+        <div class="col-xs-12">
+            <p class="text-center margin2">
+                为你找到 {{.Hits}} 个相关结果， 显示从 {{.Start}} 起共 {{len .Items}} 个
+            </p>
+        </div>
     </div>
     <div class="row margin">
         <table class="table table-bordered table-hover">
@@ -52,6 +63,16 @@
             </tr>
         {{end}}
         </table>
+
+        <nav>
+            <ul class="pager">
+            {{if ge .PrevFrom 0}}
+                <li><a href="search?q={{.Query}}&from={{.PrevFrom}}">Previous</a></li>
+            {{end}}
+                <li><a href="search?q={{.Query}}&from={{.NextFrom}}">Next</a></li>
+            </ul>
+        </nav>
+
     </div>
 </div>
 </body>

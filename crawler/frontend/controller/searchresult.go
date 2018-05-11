@@ -10,6 +10,7 @@ import (
 	"context"
 	"reflect"
 	"my_pritice/crawler/engine"
+	"regexp"
 )
 
 type SearchResultHandler struct {
@@ -33,6 +34,7 @@ func CreateSearchResultHandler(template string) SearchResultHandler {
 
 func (h SearchResultHandler) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	q := strings.TrimSpace(req.FormValue("q"))
+
 	from, err := strconv.Atoi(req.FormValue("from"))
 	if err != nil {
 		from = 0
@@ -52,8 +54,10 @@ func (h SearchResultHandler) ServeHTTP(w http.ResponseWriter, req *http.Request)
 func (h SearchResultHandler) getSearchResult(q string, from int) (model.SearchResult, error) {
 	var result model.SearchResult
 
-	resp, err := h.client.Search("dating_profile").Query(elastic.NewQueryStringQuery(q)).
-		From(from).Do(context.Background())
+	result.Query = q
+	resp, err := h.client.Search("dating_profile").Query(elastic.NewQueryStringQuery(
+		rewriteQueryString(q),
+	)).From(from).Do(context.Background())
 
 	if err != nil {
 		return result, err
@@ -61,6 +65,13 @@ func (h SearchResultHandler) getSearchResult(q string, from int) (model.SearchRe
 	result.Hits = resp.TotalHits()
 	result.Start = from
 	result.Items = resp.Each(reflect.TypeOf(engine.Item{}))
+	result.PrevFrom = result.Start - len(result.Items)
+	result.NextFrom = result.Start + len(result.Items)
 
 	return result, nil
+}
+
+func rewriteQueryString(q string) string {
+	re := regexp.MustCompile(`([A-Z][a-z]*):`)
+	return re.ReplaceAllString(q, "Payload.$1:")
 }
