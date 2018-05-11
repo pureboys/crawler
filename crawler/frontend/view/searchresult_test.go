@@ -1,17 +1,16 @@
-package frontend
+package view
 
 import (
 	"testing"
-	"html/template"
 	"my_pritice/crawler/frontend/model"
 	common "my_pritice/crawler/model"
 	"os"
 	"my_pritice/crawler/engine"
 )
 
-func TestTemplate(t *testing.T) {
-	templates := template.Must(
-		template.ParseFiles("template.html"))
+func TestSearchResultView_Render(t *testing.T) {
+	view := CreateSearchResultView("template.html")
+	file, err := os.Create("template.test.html")
 
 	page := model.SearchResult{}
 	page.Hits = 123
@@ -39,8 +38,7 @@ func TestTemplate(t *testing.T) {
 		page.Items = append(page.Items, item)
 	}
 
-	file, err := os.Create("template.test.html")
-	err = templates.Execute(file, page)
+	err = view.Render(file, page)
 	if err != nil {
 		panic(err)
 	}
