@@ -25,7 +25,8 @@
 
         <form method="get">
             <div class="col-xs-11">
-                <input type="text" class="form-control col-sm-12" placeholder="Search input" value="{{.Query}}" name="q">
+                <input type="text" class="form-control col-sm-12" placeholder="Search input" value="{{.Query}}"
+                       name="q">
             </div>
             <div class="col-xs-1">
                 <button class="btn btn-danger" type="submit">Search</button>
@@ -69,7 +70,9 @@
             {{if ge .PrevFrom 0}}
                 <li><a href="search?q={{.Query}}&from={{.PrevFrom}}">Previous</a></li>
             {{end}}
+            {{if ge .NextFrom 10}}
                 <li><a href="search?q={{.Query}}&from={{.NextFrom}}">Next</a></li>
+            {{end}}
             </ul>
         </nav>
 
