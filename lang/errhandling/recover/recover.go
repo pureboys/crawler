@@ -23,7 +23,7 @@ func tryRecover() {
 
 	}()
 
-	panic(errors.New("this is an error"))
+	 panic(errors.New("this is an error"))
 	//b := 0
 	//a := 5 / b
 	//fmt.Println(a)
