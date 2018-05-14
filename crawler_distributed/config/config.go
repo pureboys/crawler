@@ -3,7 +3,7 @@ package config
 const (
 	ParseCity     = "ParseCity"
 	ParseCityList = "ParseCityList"
-	ParseProfile  = "ParseProfile"
+	ParseProfile  = "ProfileParser"
 	NilParser     = "NilParser"
 
 	ItemSaverPort = 1234
